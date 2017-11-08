@@ -1,0 +1,290 @@
+<div class="register well">
+    <div class="container">
+        <div class="text-center">
+            <h2>Please Fill Out The Form Below</h2>
+            <p>Choose the services you are willing to purchase, one of our agents will contact you after you send all the information.</p>
+        </div>
+        <hr>
+        <div class="row contact-wrap">
+            <div class="col-md-12">
+                <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
+                <div id="errormessage"></div>
+                <p>* Indicates required field</p>
+                <form id="register-submit" method="post" action="register.php" class="register-form">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name *" required="required" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name *" required="required" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email *" required="required" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" name="cemail" id="cemail" placeholder="Confirm Email *" required="required" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password *" required="required" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" name="cpassword" id="cpassword" placeholder="Confirm Password *" required="required" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="country" id="country" placeholder="Country *" required="required" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone # *" required="required" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select class="selectpicker form-control" required="required" id="area" name="area" placeholder="Select Field *">
+                                <option value="">Select Your Field *</option>
+                                <option value="IT / Software">IT / Software</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Economics">Economics</option>
+                                <option value="Politics">Politics</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Music">Music</option>
+                                <option value="Sales">Sales</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <textarea id="details" class="form-control" name="message" rows="5" placeholder="Send any other detail (optional)"></textarea>
+                    </div>
+                    <hr>
+                    <h4>Credit Card Information:</h4>
+                    <hr>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="nameoncard" id="nameoncard" placeholder="Name on Card *" required="required" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="number" class="form-control" name="ccnumber" id="ccnumber" placeholder="Card Number *" required="required" />
+                    </div>
+                    <div class="row">
+                        <div class="form-group container">
+                            <label class="col-md-12 control-label" for="expiry-month">Expiration Date *</label>
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <select class="form-control col-md-3" name="expiry-month" id="expiry-month" required="required">
+                                            <option value="01">Jan (01)</option>
+                                            <option value="02">Feb (02)</option>
+                                            <option value="03">Mar (03)</option>
+                                            <option value="04">Apr (04)</option>
+                                            <option value="05">May (05)</option>
+                                            <option value="06">June (06)</option>
+                                            <option value="07">July (07)</option>
+                                            <option value="08">Aug (08)</option>
+                                            <option value="09">Sep (09)</option>
+                                            <option value="10">Oct (10)</option>
+                                            <option value="11">Nov (11)</option>
+                                            <option value="12">Dec (12)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="expiry-year" id="expiry-year" required="required">
+                                            <option value="17">2017</option>
+                                            <option value="18">2018</option>
+                                            <option value="19">2019</option>
+                                            <option value="20">2020</option>
+                                            <option value="21">2021</option>
+                                            <option value="22">2022</option>
+                                            <option value="23">2023</option>
+                                            <option value="24">2024</option>
+                                            <option value="25">2025</option>
+                                            <option value="26">2026</option>
+                                            <option value="27">2027</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="number" class="form-control" name="ccv" id="ccv" placeholder="Card CVV: Security Code *" required="required" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12 register">
+                        <hr>
+                        <h2>Choose The Proper Services:</h2>
+                        <hr>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="checkAll" value="All Services"> All Services
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="Microsoft Windows Technical Support" name="services" id="a1"> Microsoft Windows Technical Support
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="Apple Mac OS Technical Support" name="services" id="a2"> Apple Mac OS Technical Support
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="Small Devices Technical Support" name="services" id="a3"> Small Devices Technical Support
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="Software Application Technical Support" name="services" id="a4"> Software Application Technical Support
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="Security Software Technical Support" name="services" id="a5"> Security Software Technical Support
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="Email Services Technical Support" name="services" id="a5"> Email Services Technical Support
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+                    <section id="pricing-section" class="pricing-section">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <h2>Deluxe Service For The Best Price</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="pricing">
+                                        <div class="pricing-header">
+                                            <i class="fa fa-bell"></i>
+                                        </div>
+                                        <div class="pricing-body">
+                                            <h3 class="pricing-title">ECONOMY</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><strong>Services:</strong></li>
+                                                <hr>
+                                                <li>Tech Support Through Chat Only</li>
+                                                <hr>
+                                                <li>3 Systems Max Per Specialist</li>
+                                                <hr>
+                                                <li>8 Hours Of Service Dailyn</li>
+                                                <hr>
+                                                <li>8/5 - Monday Through Friday</li>
+                                                <hr>
+                                                <li>Extra Protection Security:
+                                                    <br> $15/Mo *Optional</li>
+                                            </ul>
+                                            <label href="register.html" class="btn know_btn">
+                                                <input type="checkbox" name="plan" value="$30 / Month"> $30 / Month
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="pricing">
+                                        <div class="pricing-header colored-bg">
+                                            <i class="fa fa-trophy"></i>
+                                        </div>
+                                        <div class="pricing-body">
+                                            <h3 class="pricing-title">DELUXE</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><strong>Services:</strong></li>
+                                                <hr>
+                                                <li>Tech Support Through Chat Only</li>
+                                                <hr>
+                                                <li>5 Systems Max Per Specialist</li>
+                                                <hr>
+                                                <li>12 Hours Of Service Per Day</li>
+                                                <hr>
+                                                <li>12/5 Monday Through Friday</li>
+                                                <hr>
+                                                <li>Extra Protection Security:
+                                                    <br> $25/Mo *Optional</li>
+                                                <hr>
+                                            </ul>
+                                            <label href="register.html" class="btn know_btn">
+                                                <input type="checkbox" name="plan" value="$75 / Month"> $75 / Month
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="pricing">
+                                        <div class="pricing-header">
+                                            <i class="fa fa-diamond"></i>
+                                        </div>
+                                        <div class="pricing-body">
+                                            <h3 class="pricing-title">ULTIMATE</h3>
+                                            <hr>
+                                            <ul>
+                                                <li>All Services Included</li>
+                                                <hr>
+                                                <li>Tech Support Throught Chat, Phone and on-site</li>
+                                                <hr>
+                                                <li>Able To Handle All Necessary Systems</li>
+                                                <hr>
+                                                <li>24/7 Service</li>
+                                                <hr>
+                                                <li>Extra Protection Security: $45/Mo *Optional</li>
+                                            </ul>
+                                            <label href="register.html" class="btn know_btn">
+                                                <input type="checkbox" name="plan" value="$155 / Month"> $155 / Month
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="pricing">
+                                        <div class="pricing-header colored-bg">
+                                            <i class="fa fa-rocket"></i>
+                                        </div>
+                                        <div class="pricing-body">
+                                            <h3 class="pricing-title">FULL TECH SUPPORT</h3>
+                                            <hr>
+                                            <ul>
+                                                <li>1 Hour: $45</li>
+                                                <hr>
+                                                <li>5 Hours: $90</li>
+                                                <hr>
+                                                <li>20 Hours: $135</li>
+                                                <hr>
+                                                <li>40 Hours: $180</li>
+                                                <hr>
+                                                <li>60 Hours: $225</li>
+                                                <h <label href="register.html" class="btn know_btn">
+                                                    <input type="checkbox" name="plan" value="Hourly"> Hourly
+                                                    </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Pricing Section -->
+                    <div class="text-center">
+                        <input id="agreeTerms" type="checkbox" value="Agree Terms" name="agreeTerms">
+                        <label for="agreeTerms">I agree with the <a href="terms.html" style="display:inline-block;">terms and conditions</a> of this service.</label>
+                        </br>
+                        </br>
+                    </div>
+                    <div class="text-center">
+                        <input class="btn btn-block btn-lg" id="submit-register" type="submit" disabled="true">
+                        <!-- <a href="#service">Get Started</a> -->
+                    </div>
+                </form>
+                <hr>
+                <div class="text-center cards">
+                    <img src="images/cc_logos.png" alt="Cards Logo">
+                </div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</div>
