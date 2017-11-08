@@ -30,7 +30,7 @@
     $agreeTerms = @trim(stripslashes(implode(', ', $_POST['agreeTerms'])));
 
     $email_from = $email;
-    $email_to = 'info@drsitedesign.com'; //replace with your email
+    $email_to = 'info@YOUR-DOMAIN.com'; //replace with your email
 
     $body =
         'Name: ' . $fname . "\n\n" .
